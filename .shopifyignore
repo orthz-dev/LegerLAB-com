@@ -1,0 +1,31 @@
+# Exclude development and source files from Shopify Theme
+src/
+public/
+scripts/
+docs/
+shopify/
+node_modules/
+.vscode/
+.git/
+.gitignore
+package.json
+package-lock.json
+vite.config.ts
+tsconfig.json
+tailwind.config.js
+postcss.config.js
+index.html
+README.md
+build-output.html
+*.md
+*.log
+
+# Allow only standard theme directories
+# assets/
+# config/
+# layout/
+# locales/
+# sections/
+# snippets/
+# templates/
+# blocks/

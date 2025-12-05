@@ -11,7 +11,7 @@ export default defineConfig({
   base: './', // Use relative paths for Shopify CDN
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './'),
+      '@': path.resolve(__dirname, './src'),
     },
   },
   publicDir: 'public',

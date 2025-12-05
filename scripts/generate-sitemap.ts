@@ -2,8 +2,8 @@ import { SitemapStream, streamToPromise } from 'sitemap';
 import { Readable } from 'stream';
 import { writeFileSync } from 'fs';
 import { join } from 'path';
-import { RoutePath } from '../types';
-import products from '../data/products';
+import { RoutePath } from '../src/types';
+import products from '../src/data/products';
 
 interface SitemapLink {
     url: string;

@@ -62,8 +62,8 @@ async function optimizeImage(inputPath, outputDir, baseName) {
 }
 
 async function main() {
-    const inputDir = path.join(process.cwd(), 'assets', 'images', 'source');
-    const outputDir = path.join(process.cwd(), 'assets', 'images', 'products');
+    const inputDir = path.join(process.cwd(), 'public', 'react-assets', 'images', 'source');
+    const outputDir = path.join(process.cwd(), 'public', 'react-assets', 'images', 'products');
 
     console.log('🖼️  Starting image optimization...\n');
 

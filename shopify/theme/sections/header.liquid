@@ -1,0 +1,54 @@
+{% comment %}
+  Header Section
+  Displays site navigation and branding
+{% endcomment %}
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-wrapper">
+      <!-- Logo -->
+      <div class="site-logo">
+        {% if section.settings.logo %}
+          <a href="/">
+            <img src="{{ section.settings.logo | img_url: '200x' }}" alt="{{ shop.name }}">
+          </a>
+        {% else %}
+          <a href="/">
+            <h1>{{ shop.name }}</h1>
+          </a>
+        {% endif %}
+      </div>
+
+      <!-- Navigation -->
+      <nav class="main-navigation">
+        <ul>
+          {% for link in linklists.main-menu.links %}
+            <li>
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+
+      <!-- Cart -->
+      <div class="header-cart">
+        <a href="/cart">
+          Cart ({{ cart.item_count }})
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo Image"
+    }
+  ]
+}
+{% endschema %}

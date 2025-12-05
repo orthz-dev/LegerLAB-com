@@ -1,0 +1,41 @@
+{% comment %}
+  Footer Section
+  Displays site footer with links and information
+{% endcomment %}
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-wrapper">
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <h3>{{ section.settings.footer_title }}</h3>
+        <ul>
+          {% for link in linklists.footer.links %}
+            <li>
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-copyright">
+        <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "footer_title",
+      "label": "Footer Title",
+      "default": "Quick Links"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,55 @@
+{% comment %}
+  Main Product Section
+  Displays product information, images, and add to cart functionality
+{% endcomment %}
+
+<div class="product-section">
+  <div class="container">
+    <div class="product-wrapper">
+      <!-- Product Images -->
+      <div class="product-images">
+        {% if product.featured_image %}
+          <img src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.title }}">
+        {% endif %}
+      </div>
+
+      <!-- Product Info -->
+      <div class="product-info">
+        <h1>{{ product.title }}</h1>
+        
+        <div class="product-price">
+          {{ product.price | money }}
+        </div>
+
+        <div class="product-description">
+          {{ product.description }}
+        </div>
+
+        <!-- Add to Cart Form -->
+        {% form 'product', product %}
+          <select name="id">
+            {% for variant in product.variants %}
+              <option value="{{ variant.id }}">
+                {{ variant.title }} - {{ variant.price | money }}
+              </option>
+            {% endfor %}
+          </select>
+
+          <button type="submit" name="add">
+            Add to Cart
+          </button>
+        {% endform %}
+      </div>
+    </div>
+
+    <!-- Product Schema -->
+    {% render 'product-schema', product: product %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Main Product",
+  "settings": []
+}
+{% endschema %}

@@ -1,7 +1,0 @@
-theme:
-  root: shopify/theme
-  ignore:
-    - "*.md"
-    - "*.txt"
-    - node_modules/**
-    - .git/**

@@ -13,8 +13,6 @@ import BlogDidYouKnow from './pages/BlogDidYouKnow';
 import BlogMagazine from './pages/BlogMagazine';
 import Faq from './pages/Faq';
 import { RoutePath } from './types';
-import { IMAGES } from './utils/image-paths';
-
 // Scroll to top on route change
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -35,14 +33,6 @@ const App: React.FC = () => {
     <HelmetProvider>
       <BrowserRouter>
         <ScrollToTop />
-        {/* DEBUG BANNER - Remove after verification */}
-        {(window as any).shopify_assets_url && (
-          <div style={{ background: '#ff0000', color: '#fff', padding: '15px', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 10000, textAlign: 'center', fontWeight: 'bold' }}>
-            DEBUG MODE: <br />
-            Asset Base: [{(window as any).shopify_assets_url}] <br />
-            Example Image URL: [{IMAGES.products.kit6Front}]
-          </div>
-        )}
         <Layout>
           <Routes>
             <Route path={RoutePath.HOME} element={<Home />} />

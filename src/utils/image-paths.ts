@@ -18,7 +18,12 @@ const p = (path: string) => {
     if (typeof window !== 'undefined' && (window as any).shopify_assets_url) {
         const baseUrl = (window as any).shopify_assets_url;
         // Ensure base ends with slash
-        const safeBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+        let safeBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+
+        // Force HTTPS if protocol-relative
+        if (safeBase.startsWith('//')) {
+            safeBase = `https:${safeBase}`;
+        }
 
         const cleanPath = path.startsWith('/') ? path.substring(1) : path;
         const flattenedPath = cleanPath.replace(/\//g, '-');

@@ -14,15 +14,16 @@ const getBasePath = () => {
 
 const BASE = getBasePath();
 
-// Helper to construct path (avoids double slashes if base has one)
-// AND flattens structure for Shopify (images/products/a.jpg -> images-products-a.jpg)
 const p = (path: string) => {
     if (typeof window !== 'undefined' && (window as any).shopify_assets_url) {
-        // Production: Flatten path (replace slashes with hyphens) to match build script
-        // Also remove any leading slash if present in path to avoid issues
+        const baseUrl = (window as any).shopify_assets_url;
+        // Ensure base ends with slash
+        const safeBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+
         const cleanPath = path.startsWith('/') ? path.substring(1) : path;
         const flattenedPath = cleanPath.replace(/\//g, '-');
-        return `${BASE}${flattenedPath}`;
+
+        return `${safeBase}${flattenedPath}`;
     }
     // Local: Keep original structure
     return `${BASE}${path}`;

@@ -13,6 +13,7 @@ import BlogDidYouKnow from './pages/BlogDidYouKnow';
 import BlogMagazine from './pages/BlogMagazine';
 import Faq from './pages/Faq';
 import { RoutePath } from './types';
+import { IMAGES } from './utils/image-paths';
 
 // Scroll to top on route change
 const ScrollToTop = () => {

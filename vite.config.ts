@@ -21,10 +21,10 @@ export default defineConfig({
     minify: 'esbuild', // Use esbuild instead of terser
     rollupOptions: {
       output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'helmet': ['react-helmet-async']
-        }
+        manualChunks: () => 'index', // Force all code into a single bundle
+        entryFileNames: 'assets/[name]-[hash].js',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]',
       }
     },
     chunkSizeWarningLimit: 1000

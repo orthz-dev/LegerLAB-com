@@ -16,6 +16,26 @@ const distDir = path.join(rootDir, 'dist');
 const assetsDir = path.join(rootDir, 'assets');
 const layoutDir = path.join(rootDir, 'layout');
 
+// Helper to copy directory recursively but flatten structure
+function copyFlattened(source, target, prefix = '') {
+    if (!fs.existsSync(source)) return;
+
+    const files = fs.readdirSync(source);
+    files.forEach(file => {
+        const fullPath = path.join(source, file);
+        const stat = fs.statSync(fullPath);
+
+        if (stat.isDirectory()) {
+            copyFlattened(fullPath, target, `${prefix}${file}-`);
+        } else {
+            // Replace spaces with hyphens just in case
+            const safeName = file.replace(/\s+/g, '-');
+            const targetPath = path.join(target, `${prefix}${safeName}`);
+            fs.copyFileSync(fullPath, targetPath);
+        }
+    });
+}
+
 console.log('🚀 Building React app for Shopify...\n');
 
 // Step 1: Build React app
@@ -32,9 +52,11 @@ try {
 console.log('🖼️ Step 1.5: Copying Public React Assets to Shopify assets...');
 const publicAssetsDir = path.join(rootDir, 'public', 'react-assets');
 if (fs.existsSync(publicAssetsDir)) {
-    // Copy content of public/react-assets to assets/
-    fs.copySync(publicAssetsDir, assetsDir, { overwrite: true });
-    console.log(`✅ Copied images from ${publicAssetsDir} to ${assetsDir}\n`);
+    // Copy content of public/react-assets to assets/ with FLATTENED structure
+    // e.g. images/products/a.jpg -> assets/images-products-a.jpg
+    console.log('Using flattened copy for Shopify compatibility...');
+    copyFlattened(publicAssetsDir, assetsDir);
+    console.log(`✅ Copied & Flattened images from ${publicAssetsDir} to ${assetsDir}\n`);
 } else {
     console.warn(`⚠️  Warning: ${publicAssetsDir} not found. Images might be missing.\n`);
 }

@@ -25,26 +25,19 @@
   <!-- Shopify Required -->
   {{ content_for_header }}
   
-  <!-- Stylesheets -->
-  {{ 'theme.css' | asset_url | stylesheet_tag }}
+  <!-- React App Styles -->
+  {{ 'app.css' | asset_url | stylesheet_tag }}
   
   <!-- Organization Schema -->
   {% render 'organization-schema' %}
 </head>
 
 <body>
-  <!-- Header -->
-  {% section 'header' %}
+  <!-- React App Root -->
+  <div id="root"></div>
   
-  <!-- Main Content -->
-  <main role="main">
-    {{ content_for_layout }}
-  </main>
-  
-  <!-- Footer -->
-  {% section 'footer' %}
-  
-  <!-- Scripts -->
-  {{ 'theme.js' | asset_url | script_tag }}
+  <!-- React App Script -->
+  <script type="module" src="{{ 'app.js' | asset_url }}"></script>
 </body>
 </html>
+

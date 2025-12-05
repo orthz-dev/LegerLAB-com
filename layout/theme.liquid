@@ -27,17 +27,14 @@
   
   <!-- React App Styles -->
   {{ 'app.css' | asset_url | stylesheet_tag }}
-  
-  <!-- Organization Schema -->
-  {% render 'organization-schema' %}
 </head>
 
 <body>
-  <!-- React App Root -->
-  <div id="root"></div>
-  
-  <!-- React App Script -->
-  <script type="module" src="{{ 'app.js' | asset_url }}"></script>
+  <!-- Main Content (REQUIRED BY SHOPIFY) -->
+  <main role="main">
+    {{ content_for_layout }}
+  </main>
 </body>
 </html>
+
 

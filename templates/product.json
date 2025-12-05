@@ -1,10 +1,10 @@
 {
     "sections": {
-        "main": {
-            "type": "main-product"
+        "react-app": {
+            "type": "react-app"
         }
     },
     "order": [
-        "main"
+        "react-app"
     ]
 }

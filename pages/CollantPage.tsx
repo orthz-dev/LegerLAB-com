@@ -44,7 +44,7 @@ const CollantPage: React.FC = () => {
           <div className="max-w-[1120px] mx-auto px-4 md:px-10">
             <div className="flex flex-col items-center text-center mb-8">
               <img
-                src="/assets/images/icons/collant-icon.webp"
+                src="/react-assets/images/icons/collant-icon.webp"
                 alt="Collant"
                 className="w-[120px] mb-4"
               />
@@ -64,7 +64,7 @@ const CollantPage: React.FC = () => {
             </div>
 
             <div className="flex flex-col items-center mb-12">
-              <img src="/assets/images/features/benefits-badges.webp" alt="Bollini" className="w-[320px] mb-8" />
+              <img src="/react-assets/images/features/benefits-badges.webp" alt="Bollini" className="w-[320px] mb-8" />
               <button
                 onClick={() => navigate(RoutePath.ORDER)}
                 className="bg-brand-soft border border-brand-strong text-brand-strong px-12 py-3 rounded-full font-normal text-[16px] hover:opacity-90"
@@ -75,9 +75,9 @@ const CollantPage: React.FC = () => {
 
             {/* CAROUSEL 1 (Static grid for simplicity) */}
             <div className="grid md:grid-cols-3 gap-4 mb-12">
-              <img className="rounded-[30px] w-full" src="/assets/images/products/collant-solo.webp" alt="Solo" />
-              <img className="rounded-[30px] w-full" src="/assets/images/products/kit-6-treatments-box.webp" alt="Box" />
-              <img className="rounded-[30px] w-full" src="/assets/images/products/kit-1-treatment-lifestyle.webp" alt="Legs" />
+              <img className="rounded-[30px] w-full" src="/react-assets/images/products/collant-solo.webp" alt="Solo" />
+              <img className="rounded-[30px] w-full" src="/react-assets/images/products/kit-6-treatments-box.webp" alt="Box" />
+              <img className="rounded-[30px] w-full" src="/react-assets/images/products/kit-1-treatment-lifestyle.webp" alt="Legs" />
             </div>
           </div>
         </section>
@@ -88,18 +88,18 @@ const CollantPage: React.FC = () => {
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <div className="w-full md:w-1/2">
                 <div className="grid grid-cols-1 gap-4">
-                  <img src="/assets/images/products/collant-wearing-1.webp" className="rounded-[30px] w-full" alt="Wear 1" />
-                  <img src="/assets/images/products/collant-wearing-2.webp" className="rounded-[30px] w-full" alt="Wear 2" />
+                  <img src="/react-assets/images/products/collant-wearing-1.webp" className="rounded-[30px] w-full" alt="Wear 1" />
+                  <img src="/react-assets/images/products/collant-wearing-2.webp" className="rounded-[30px] w-full" alt="Wear 2" />
                 </div>
               </div>
               <div className="w-full md:w-1/2 text-center">
-                <img src="/assets/images/icons/collant-icon.webp" className="w-[120px] mx-auto mb-6" alt="Icon" />
+                <img src="/react-assets/images/icons/collant-icon.webp" className="w-[120px] mx-auto mb-6" alt="Icon" />
                 <h2 className="text-[40px] md:text-[50px] text-brand-strong mb-6 font-normal">Taglia unica Superelastica</h2>
                 <p className="text-[16px] text-brand-strong mb-8">
                   Tutti i benefici dei bendaggi drenanti anticellulite senza la complicazione dell'applicazione. Il collant drenante anticellulite Léger Lab è facile da indossare e copre anche piedi, pancia e fianchi. A differenza delle bende drenanti anticellulite sei libera di muoverti grazie alla praticità del collant e alla soluzione gel che non cola.<br /><br />
                   Vestibilità fino alla taglia 52.
                 </p>
-                <img src="/assets/images/features/benefits-badges.webp" className="w-[320px] mx-auto mb-8" alt="Bollini" />
+                <img src="/react-assets/images/features/benefits-badges.webp" className="w-[320px] mx-auto mb-8" alt="Bollini" />
                 <button
                   onClick={() => navigate(RoutePath.ORDER)}
                   className="bg-brand-fresh border border-brand-strong text-brand-strong px-12 py-3 rounded-full font-normal text-[16px]"
@@ -115,13 +115,13 @@ const CollantPage: React.FC = () => {
         <section className="py-10 bg-white">
           <div className="max-w-[1120px] mx-auto px-4 md:px-10">
             <div className="flex flex-col items-center text-center">
-              <img src="/assets/images/icons/ice-icon.webp" className="w-[83px] mb-4" alt="Ice Icon" />
+              <img src="/react-assets/images/icons/ice-icon.webp" className="w-[83px] mb-4" alt="Ice Icon" />
               <h2 className="text-[40px] md:text-[50px] text-brand-strong mb-4 font-normal">Gel Effetto Freddo</h2>
               <p className="text-[16px] text-brand-strong max-w-3xl mb-8">
                 Aggiungi un tocco di freschezza con il Gel Effetto Freddo, incluso nei Kit Collant Drenante Anticellulite Léger Lab, e massimizza l'effetto #feelLéger.<br /><br />
                 La sua formula unica rivitalizza, tonifica e migliora la circolazione linfatica. Applica il gel sulla pelle asciutta dopo la doccia e goditi la sensazione di leggerezza sulle tue gambe.
               </p>
-              <img src="/assets/images/features/benefits-badges.webp" className="w-[320px] mx-auto mb-8" alt="Bollini" />
+              <img src="/react-assets/images/features/benefits-badges.webp" className="w-[320px] mx-auto mb-8" alt="Bollini" />
               <button
                 onClick={() => navigate(RoutePath.ORDER)}
                 className="bg-brand-fresh border border-brand-strong text-brand-strong px-12 py-3 rounded-full font-normal text-[16px] mb-12"
@@ -130,8 +130,8 @@ const CollantPage: React.FC = () => {
               </button>
 
               <div className="grid md:grid-cols-2 gap-4 w-full">
-                <img src="/assets/images/products/gel-application-1.webp" className="w-full rounded-[30px]" alt="Gel 1" />
-                <img src="/assets/images/products/gel-application-2.webp" className="w-full rounded-[30px]" alt="Gel 2" />
+                <img src="/react-assets/images/products/gel-application-1.webp" className="w-full rounded-[30px]" alt="Gel 1" />
+                <img src="/react-assets/images/products/gel-application-2.webp" className="w-full rounded-[30px]" alt="Gel 2" />
               </div>
             </div>
           </div>
@@ -141,13 +141,13 @@ const CollantPage: React.FC = () => {
         <section className="py-10 bg-white">
           <div className="max-w-[1120px] mx-auto px-4 md:px-10 text-center">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-12">
-              <img src="/assets/images/features/salt-process-a.webp" className="rounded-[40px]" alt="Step A" />
-              <img src="/assets/images/features/salt-process-b.webp" className="rounded-[40px]" alt="Step B" />
-              <img src="/assets/images/features/salt-process-c.webp" className="rounded-[40px]" alt="Step C" />
-              <img src="/assets/images/features/salt-process-d.webp" className="rounded-[40px]" alt="Step D" />
+              <img src="/react-assets/images/features/salt-process-a.webp" className="rounded-[40px]" alt="Step A" />
+              <img src="/react-assets/images/features/salt-process-b.webp" className="rounded-[40px]" alt="Step B" />
+              <img src="/react-assets/images/features/salt-process-c.webp" className="rounded-[40px]" alt="Step C" />
+              <img src="/react-assets/images/features/salt-process-d.webp" className="rounded-[40px]" alt="Step D" />
             </div>
 
-            <img src="/assets/images/icons/stars-decoration.webp" className="w-[71px] mx-auto mb-4" alt="Stars" />
+            <img src="/react-assets/images/icons/stars-decoration.webp" className="w-[71px] mx-auto mb-4" alt="Stars" />
             <h2 className="text-[40px] md:text-[50px] text-brand-strong mb-4 font-normal">Perché scegliere il Sale del Mar Morto?</h2>
             <p className="text-[16px] text-brand-strong max-w-3xl mx-auto mb-8">
               Grazie alle sue particelle, più piccole rispetto agli altri sali, il Sale del Mar Morto <strong>viene assorbito più facilmente</strong> dalla pelle e <strong>penetra più in profondità</strong>. Questo, insieme all’alta concentrazione di minerali come magnesio e potassio, favorisce l’azione osmotica.<br />
@@ -155,7 +155,7 @@ const CollantPage: React.FC = () => {
               Al contrario del sale dell’Himalaya, il Sale del Mar Morto è il migliore alleato in ambito cosmetico e dermatologico.<br />
               Provalo con i Collant Drenanti Anticellulite Léger LAB.
             </p>
-            <img src="/assets/images/features/benefits-badges.webp" className="w-[320px] mx-auto mb-8" alt="Bollini" />
+            <img src="/react-assets/images/features/benefits-badges.webp" className="w-[320px] mx-auto mb-8" alt="Bollini" />
             <button
               onClick={() => navigate(RoutePath.ORDER)}
               className="bg-brand-soft border border-brand-strong text-brand-strong px-12 py-3 rounded-full font-normal text-[16px]"
@@ -168,14 +168,14 @@ const CollantPage: React.FC = () => {
         {/* SECTION 5: GEL ATTIVO DETAILS */}
         <section className="py-10 bg-brand-soft">
           <div className="max-w-[1120px] mx-auto px-4 md:px-10 text-center">
-            <img src="/assets/images/features/gel-details.webp" className="w-full max-w-[1226px] mx-auto" alt="Gel Active Details" />
+            <img src="/react-assets/images/features/gel-details.webp" className="w-full max-w-[1226px] mx-auto" alt="Gel Active Details" />
           </div>
         </section>
 
         {/* SECTION 6: REFILL */}
         <section className="py-10 bg-white">
           <div className="max-w-[1120px] mx-auto px-4 md:px-10 text-center">
-            <img src="/assets/images/features/refill-info.webp" className="w-full max-w-[1286px] mx-auto mb-4" alt="Ricarica" />
+            <img src="/react-assets/images/features/refill-info.webp" className="w-full max-w-[1286px] mx-auto mb-4" alt="Ricarica" />
             <p className="text-brand-text text-[14px] mb-8">* Kit Ricarica Léger LAB acquistabile separatamente</p>
           </div>
         </section>
@@ -187,8 +187,8 @@ const CollantPage: React.FC = () => {
               Perché amerai i Collant Drenanti Anticellulite Léger Lab rispetto alle bende anticellulite tradizionali.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
-              <img src="/assets/images/features/comparison-vs-1.webp" className="w-full" alt="Vs" />
-              <img src="/assets/images/features/comparison-vs-2.webp" className="w-full" alt="Vs" />
+              <img src="/react-assets/images/features/comparison-vs-1.webp" className="w-full" alt="Vs" />
+              <img src="/react-assets/images/features/comparison-vs-2.webp" className="w-full" alt="Vs" />
             </div>
           </div>
         </section>
@@ -198,10 +198,10 @@ const CollantPage: React.FC = () => {
           <div className="max-w-[1120px] mx-auto px-4 md:px-10 text-center">
             <h3 className="text-[20px] text-brand-strong mb-8">Dicono di noi</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-              <img src="/assets/images/logos/press/elle-logo.webp" alt="Elle" className="h-8 md:h-10 object-contain" />
-              <img src="/assets/images/logos/press/vogue-logo.webp" alt="Vogue" className="h-8 md:h-10 object-contain" />
-              <img src="/assets/images/logos/press/mypersonaltrainer-logo.webp" alt="MyPersonalTrainer" className="h-8 md:h-10 object-contain" />
-              <img src="/assets/images/logos/press/corriere-logo.webp" alt="Corriere" className="h-8 md:h-10 object-contain" />
+              <img src="/react-assets/images/logos/press/elle-logo.webp" alt="Elle" className="h-8 md:h-10 object-contain" />
+              <img src="/react-assets/images/logos/press/vogue-logo.webp" alt="Vogue" className="h-8 md:h-10 object-contain" />
+              <img src="/react-assets/images/logos/press/mypersonaltrainer-logo.webp" alt="MyPersonalTrainer" className="h-8 md:h-10 object-contain" />
+              <img src="/react-assets/images/logos/press/corriere-logo.webp" alt="Corriere" className="h-8 md:h-10 object-contain" />
             </div>
           </div>
         </section>
@@ -242,7 +242,7 @@ const CollantPage: React.FC = () => {
             <h3 className="text-[20px] text-brand-strong mb-8">Disponibile in farmacia e su</h3>
             <div className="flex justify-center">
               <a href="https://www.amazon.it/dp/B0CHB58SV3" target="_blank" rel="noreferrer">
-                <img src="/assets/images/logos/partners/amazon-logo.webp" alt="Amazon" className="w-[167px]" />
+                <img src="/react-assets/images/logos/partners/amazon-logo.webp" alt="Amazon" className="w-[167px]" />
               </a>
             </div>
           </div>

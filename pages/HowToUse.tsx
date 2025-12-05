@@ -8,12 +8,12 @@ const HowToUse: React.FC = () => {
   // Using placeholders for the specific image assets derived from the HTML ID analysis
   // Note: In a real scenario, we'd map all 27 images. For this clean code, we mock the carousel.
   const steps = [
-    "/assets/images/how-to/step-01-prepare.webp",
-    "/assets/images/how-to/step-02-apply.webp",
-    "/assets/images/how-to/step-03-wear.webp",
-    "/assets/images/how-to/step-04-relax.webp",
-    "/assets/images/how-to/step-05-remove.webp",
-    "/assets/images/how-to/step-06-finish.webp"
+    "/react-assets/images/how-to/step-01-prepare.webp",
+    "/react-assets/images/how-to/step-02-apply.webp",
+    "/react-assets/images/how-to/step-03-wear.webp",
+    "/react-assets/images/how-to/step-04-relax.webp",
+    "/react-assets/images/how-to/step-05-remove.webp",
+    "/react-assets/images/how-to/step-06-finish.webp"
   ];
 
   return (
@@ -76,10 +76,10 @@ const HowToUse: React.FC = () => {
       {/* FOOTER BANNER */}
       <section className="py-12 px-4 md:px-10 bg-white text-center">
          <div className="max-w-[1120px] mx-auto">
-             <img src="/assets/images/icons/shipping-free.webp" className="w-[100px] mx-auto mb-4" alt="Box" />
+             <img src="/react-assets/images/icons/shipping-free.webp" className="w-[100px] mx-auto mb-4" alt="Box" />
              <p className="text-[16px] text-brand-strong mb-8">Spedizione gratuita</p>
              
-             <img src="/assets/images/icons/shipping-fast.webp" className="w-[100px] mx-auto mb-4" alt="Box 2" />
+             <img src="/react-assets/images/icons/shipping-fast.webp" className="w-[100px] mx-auto mb-4" alt="Box 2" />
              <p className="text-[16px] text-brand-strong">Spedizione veloce entro 2 giorni</p>
          </div>
       </section>
@@ -88,7 +88,7 @@ const HowToUse: React.FC = () => {
          <h3 className="text-[20px] text-brand-strong mb-8">Disponibile in farmacia e su</h3>
          <div className="flex justify-center">
              <a href="https://www.amazon.it/dp/B0CHB58SV3" target="_blank" rel="noreferrer">
-               <img src="/assets/images/logos/partners/amazon-logo.webp" alt="Amazon" className="w-[167px]" />
+               <img src="/react-assets/images/logos/partners/amazon-logo.webp" alt="Amazon" className="w-[167px]" />
              </a>
           </div>
       </section>

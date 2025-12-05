@@ -23,7 +23,7 @@ const Retailers: React.FC = () => {
       <section className="py-12 md:py-20 px-4 md:px-10">
          <div className="max-w-[1120px] mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div>
-               <img src="/assets/images/icons/store-icon.webp" className="w-[120px] mb-6" alt="Store Icon" />
+               <img src="/react-assets/images/icons/store-icon.webp" className="w-[120px] mb-6" alt="Store Icon" />
                <h1 className="text-[40px] md:text-[50px] font-normal text-brand-strong leading-tight mb-6">
                  Porta Léger LAB nel Tuo Punto Vendita
                </h1>
@@ -35,7 +35,7 @@ const Retailers: React.FC = () => {
                </button>
             </div>
             <div className="flex justify-center">
-               <img src="/assets/images/banners/store-image.webp" className="w-full max-w-[540px]" alt="Store" />
+               <img src="/react-assets/images/banners/store-image.webp" className="w-full max-w-[540px]" alt="Store" />
             </div>
          </div>
       </section>
@@ -45,10 +45,10 @@ const Retailers: React.FC = () => {
          <div className="max-w-[1120px] mx-auto px-4 md:px-10">
             <div className="grid md:grid-cols-2 gap-12 items-center">
                <div className="order-2 md:order-1">
-                  <img src="/assets/images/banners/partner-offer.webp" className="w-full max-w-[540px]" alt="Partner Offer" />
+                  <img src="/react-assets/images/banners/partner-offer.webp" className="w-full max-w-[540px]" alt="Partner Offer" />
                </div>
                <div className="order-1 md:order-2">
-                  <img src="/assets/images/icons/hands-icon.webp" className="w-[120px] mb-6" alt="Hands" />
+                  <img src="/react-assets/images/icons/hands-icon.webp" className="w-[120px] mb-6" alt="Hands" />
                   <h2 className="text-[40px] md:text-[50px] text-brand-strong mb-6 font-normal">Cosa offriamo</h2>
                   <ul className="space-y-4 mb-8">
                      {[
@@ -78,7 +78,7 @@ const Retailers: React.FC = () => {
       {/* WHO CHOSE US (Store Locator Placeholder) */}
       <section className="py-12 md:py-20 bg-white">
          <div className="max-w-[1120px] mx-auto px-4 md:px-10 text-center">
-             <img src="/assets/images/icons/stars-decoration.webp" className="w-[71px] mx-auto mb-4" alt="Stars" />
+             <img src="/react-assets/images/icons/stars-decoration.webp" className="w-[71px] mx-auto mb-4" alt="Stars" />
              <h2 className="text-[40px] md:text-[50px] text-brand-strong mb-4 font-normal">Chi ci ha scelto</h2>
              <p className="text-[16px] text-brand-text max-w-3xl mx-auto mb-12">
                Siamo orgogliosi della rete di professionisti e rivenditori che hanno già scelto Léger LAB per l'innovazione e l'efficacia dei nostri trattamenti.
@@ -102,10 +102,10 @@ const Retailers: React.FC = () => {
          <div className="max-w-[1120px] mx-auto px-4 md:px-10">
             <div className="grid md:grid-cols-2 gap-12 items-center">
                <div>
-                  <img src="/assets/images/banners/influencer-promo.webp" className="w-full max-w-[564px]" alt="Influencer" />
+                  <img src="/react-assets/images/banners/influencer-promo.webp" className="w-full max-w-[564px]" alt="Influencer" />
                </div>
                <div>
-                  <img src="/assets/images/icons/influencer-icon.webp" className="w-[120px] mb-6" alt="Icon" />
+                  <img src="/react-assets/images/icons/influencer-icon.webp" className="w-[120px] mb-6" alt="Icon" />
                   <h2 className="text-[40px] md:text-[50px] text-brand-strong mb-6 font-normal">Sei un creator?</h2>
                   <p className="text-[16px] text-brand-text mb-8 leading-relaxed">
                      Siamo sempre aperti a collaborazioni con chi condivide i nostri valori. La nostra filosofia va "oltre il prodotto": promuoviamo un vero stile di vita.<br/><br/>
@@ -122,7 +122,7 @@ const Retailers: React.FC = () => {
       {/* FINAL CTA */}
       <section className="py-12 md:py-20 bg-brand-soft/30">
          <div className="max-w-[1120px] mx-auto px-4 md:px-10 text-center">
-             <img src="/assets/images/icons/stars-decoration.webp" className="w-[71px] mx-auto mb-6" alt="Stars" />
+             <img src="/react-assets/images/icons/stars-decoration.webp" className="w-[71px] mx-auto mb-6" alt="Stars" />
              <h2 className="text-[40px] md:text-[50px] text-brand-strong mb-6 font-normal">Pronti a partire insieme?</h2>
              <p className="text-[16px] text-brand-text max-w-3xl mx-auto mb-8">
                Hai la giusta energia e sei pronto a trasformare la cura del corpo in un rituale di leggerezza? Non vediamo l’ora di sentirti per costruire un percorso di successo.
@@ -134,7 +134,7 @@ const Retailers: React.FC = () => {
              </a>
 
              <div className="mt-12 p-8 bg-white rounded-2xl max-w-2xl mx-auto shadow-sm">
-                <img src="/assets/images/icons/stars-decoration.webp" className="w-[50px] mx-auto mb-4" alt="Icon" />
+                <img src="/react-assets/images/icons/stars-decoration.webp" className="w-[50px] mx-auto mb-4" alt="Icon" />
                 <h3 className="text-[16px] font-bold text-brand-strong mb-4 uppercase">Contatti diretti</h3>
                 <div className="text-brand-text">
                    <p><a href="mailto:commerciale@legerlab.com" className="hover:underline">commerciale@legerlab.com</a></p>

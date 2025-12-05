@@ -3,7 +3,7 @@ export const seoConfig = {
     siteUrl: "https://legerlab.com",
     defaultTitle: "Leger Lab | Collant Drenante Anticellulite",
     defaultDescription: "Trattamenti corpo professionali a casa tua. Kit Drenanti e Anticellulite con tecnologia brevettata. Spedizione gratuita ✓ Risultati visibili ✓",
-    defaultImage: "/assets/images/logos/og-image.jpg",
+    defaultImage: "/react-assets/images/logos/og-image.jpg",
     defaultKeywords: [
         "collant drenante",
         "anticellulite",
@@ -21,7 +21,7 @@ export const seoConfig = {
         name: "Leger Lab",
         legalName: "Leger Lab S.r.l.",
         url: "https://legerlab.com",
-        logo: "https://legerlab.com/assets/images/logos/logo-main.svg",
+        logo: "https://legerlab.com/react-assets/images/logos/logo-main.svg",
         foundingDate: "2020",
         contactPoint: {
             telephone: "+39-XXX-XXXXXXX",

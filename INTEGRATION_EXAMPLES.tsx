@@ -109,7 +109,7 @@ const SpecialPage: React.FC = () => {
       metaOverrides={{
         title: "Special Promotion - Limited Time Offer",
         description: "Get 50% off on all products this week only!",
-        image: "/assets/images/special-promo.webp",
+        image: "/react-assets/images/special-promo.webp",
         noindex: false // Set to true if you don't want this page indexed
       }}
     >

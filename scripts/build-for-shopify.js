@@ -28,6 +28,17 @@ try {
     process.exit(1);
 }
 
+// Step 1.5: Copy Public Assets (Images)
+console.log('🖼️ Step 1.5: Copying Public React Assets to Shopify assets...');
+const publicAssetsDir = path.join(rootDir, 'public', 'react-assets');
+if (fs.existsSync(publicAssetsDir)) {
+    // Copy content of public/react-assets to assets/
+    fs.copySync(publicAssetsDir, assetsDir, { overwrite: true });
+    console.log(`✅ Copied images from ${publicAssetsDir} to ${assetsDir}\n`);
+} else {
+    console.warn(`⚠️  Warning: ${publicAssetsDir} not found. Images might be missing.\n`);
+}
+
 // Step 2: Copy built files to Shopify assets
 console.log('📁 Step 2: Copying built files to Shopify assets...');
 

@@ -26,6 +26,9 @@
   {{ content_for_header }}
   
   <!-- React App Styles -->
+  <script>
+    window.shopify_assets_url = "{{ 'app.js' | asset_url | split: 'app.js' | first }}";
+  </script>
   {{ 'app.css' | asset_url | stylesheet_tag }}
 </head>
 

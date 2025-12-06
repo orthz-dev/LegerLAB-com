@@ -1,0 +1,26 @@
+<section class="py-10 bg-brand-soft relative overflow-hidden">
+  <div class="max-w-[1120px] mx-auto px-4 md:px-10 flex flex-col md:flex-row items-center">
+    <div class="w-full md:w-1/2 mb-8 md:mb-0 relative z-10">
+      <img src="{{ 'banners-legs-promo.jpg' | asset_url }}" alt="Legs" class="w-full max-w-[600px]" width="600" height="auto" />
+    </div>
+    <div class="w-full md:w-1/2 text-center md:text-left z-10 md:pl-10">
+      <h2 class="text-[60px] md:text-[130px] leading-none font-normal text-brand-strong mb-4 font-lato">
+        LEGS<br />ON<br />TOP
+      </h2>
+      <h3 class="text-[24px] md:text-[32px] text-brand-strong mb-4">10% DI SCONTO</h3>
+      <p class="text-[16px] text-brand-strong">iscrivendoti alla newsletter. Valida su Amazon.it</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Promo Banner",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Promo Banner"
+    }
+  ]
+}
+{% endschema %}

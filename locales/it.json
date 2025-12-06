@@ -1,0 +1,12 @@
+{
+    "general": {
+        "accessibility": {
+            "skip_to_content": "Vai al contenuto",
+            "close": "Chiudi"
+        },
+        "meta": {
+            "tags": "Tag",
+            "page": "Pagina {{ page }}"
+        }
+    }
+}

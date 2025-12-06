@@ -1,71 +1,10 @@
 [
     {
         "name": "theme_info",
-        "theme_name": "LegerLAB",
+        "theme_name": "LegerLAB Native",
+        "theme_author": "Orthz Dev",
         "theme_version": "1.0.0",
-        "theme_author": "LegerLAB",
-        "theme_documentation_url": "https://legerlab.com",
-        "theme_support_url": "https://legerlab.com/support"
-    },
-    {
-        "name": "Colors",
-        "settings": [
-            {
-                "type": "header",
-                "content": "Color Scheme"
-            },
-            {
-                "type": "color",
-                "id": "color_primary",
-                "label": "Primary Color",
-                "default": "#000000"
-            },
-            {
-                "type": "color",
-                "id": "color_secondary",
-                "label": "Secondary Color",
-                "default": "#ffffff"
-            }
-        ]
-    },
-    {
-        "name": "Typography",
-        "settings": [
-            {
-                "type": "header",
-                "content": "Font Settings"
-            },
-            {
-                "type": "font_picker",
-                "id": "font_heading",
-                "label": "Heading Font",
-                "default": "helvetica_n4"
-            },
-            {
-                "type": "font_picker",
-                "id": "font_body",
-                "label": "Body Font",
-                "default": "helvetica_n4"
-            }
-        ]
-    },
-    {
-        "name": "Layout",
-        "settings": [
-            {
-                "type": "header",
-                "content": "Layout Settings"
-            },
-            {
-                "type": "range",
-                "id": "layout_max_width",
-                "min": 1000,
-                "max": 1600,
-                "step": 50,
-                "unit": "px",
-                "label": "Maximum Width",
-                "default": 1200
-            }
-        ]
+        "theme_documentation_url": "https://github.com/orthz-dev/LegerLAB-com",
+        "theme_support_url": "https://github.com/orthz-dev/LegerLAB-com/issues"
     }
 ]

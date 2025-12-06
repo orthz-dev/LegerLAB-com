@@ -1,31 +1,6 @@
 {
-    "current": {
-        "sections": {
-            "header": {
-                "type": "header",
-                "settings": {}
-            },
-            "footer": {
-                "type": "footer",
-                "settings": {
-                    "footer_title": "Quick Links"
-                }
-            }
-        },
-        "content_for_index": []
-    },
+    "current": "Default",
     "presets": {
-        "Default": {
-            "sections": {
-                "header": {
-                    "type": "header",
-                    "settings": {}
-                },
-                "footer": {
-                    "type": "footer",
-                    "settings": {}
-                }
-            }
-        }
+        "Default": {}
     }
 }

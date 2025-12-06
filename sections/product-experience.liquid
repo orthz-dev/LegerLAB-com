@@ -1,0 +1,32 @@
+<section class="py-10 md:py-20 bg-white">
+  <div class="max-w-[1120px] mx-auto px-4 md:px-10 grid md:grid-cols-2 gap-12 items-center">
+    <div class="order-2 md:order-1">
+      <img src="{{ 'features-benefits-badges.jpg' | asset_url }}" alt="Benefits" class="w-[320px] mx-auto md:mx-0 mb-8" width="320" height="auto" />
+      <h2 class="text-[30px] md:text-[50px] leading-tight text-brand-strong mb-4">
+        Più semplice,<br />più efficace.<br />Ricaricabile.
+      </h2>
+      <p class="text-[16px] text-brand-strong mb-8">Da € 24,99</p>
+      <a
+        href="/products/collant-drenante-anticellulite"
+        class="bg-brand-soft text-brand-strong px-10 py-3 rounded-full font-normal text-[16px] inline-block"
+      >
+        SCOPRI IL COLLANT
+      </a>
+    </div>
+    <div class="order-1 md:order-2">
+      <img src="{{ 'banners-leger-experience.jpg' | asset_url }}" alt="Leger Experience" class="w-full max-w-[800px]" width="800" height="auto" />
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product Experience",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Product Experience"
+    }
+  ]
+}
+{% endschema %}

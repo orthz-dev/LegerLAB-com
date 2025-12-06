@@ -1,17 +1,8 @@
-{% comment %}
-  Main Page Section
-  Displays main content for standard pages
-{% endcomment %}
-
-<div class="page-section">
-  <div class="container">
-    <div class="page-wrapper">
-      <h1>{{ page.title }}</h1>
-      
-      <div class="page-content">
-        {{ page.content }}
-      </div>
-    </div>
+<div class="max-w-[1120px] mx-auto px-4 md:px-10 py-12 font-lato">
+  <h1 class="text-3xl md:text-5xl font-bold text-center text-brand-strong mb-12">{{ page.title }}</h1>
+  
+  <div class="prose prose-lg mx-auto text-brand-strong">
+    {{ page.content }}
   </div>
 </div>
 

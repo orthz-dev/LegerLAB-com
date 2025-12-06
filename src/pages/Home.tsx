@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { RoutePath } from '../types';
 import products from '../data/products';
 import PageWrapper from '../components/PageWrapper';
+import IMAGES from '../utils/image-paths';
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ const Home: React.FC = () => {
         <section
           className="relative pt-10 pb-[150px] bg-[#FBFBFB]"
           style={{
-            backgroundImage: `url('/react-assets/images/banners/hero-background.webp')`,
+            backgroundImage: `url('${IMAGES.banners.heroBackground}')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
             backgroundAttachment: 'fixed'
@@ -71,10 +72,10 @@ const Home: React.FC = () => {
           <div className="max-w-[1120px] mx-auto px-4 md:px-10 text-center">
             <h3 className="text-[20px] md:text-[24px] text-brand-strong mb-10">Dicono di noi</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-              <img src="/react-assets/images/logos/press/elle-logo.webp" alt="Elle" className="h-8 md:h-10 object-contain" />
-              <img src="/react-assets/images/logos/press/vogue-logo.webp" alt="Vogue" className="h-8 md:h-10 object-contain" />
-              <img src="/react-assets/images/logos/press/mypersonaltrainer-logo.webp" alt="MyPersonalTrainer" className="h-8 md:h-10 object-contain" />
-              <img src="/react-assets/images/logos/press/corriere-logo.webp" alt="Corriere" className="h-8 md:h-10 object-contain" />
+              <img src={IMAGES.logos.press.elle} alt="Elle" className="h-8 md:h-10 object-contain" />
+              <img src={IMAGES.logos.press.vogue} alt="Vogue" className="h-8 md:h-10 object-contain" />
+              <img src={IMAGES.logos.press.myPersonalTrainer} alt="MyPersonalTrainer" className="h-8 md:h-10 object-contain" />
+              <img src={IMAGES.logos.press.corriere} alt="Corriere" className="h-8 md:h-10 object-contain" />
             </div>
           </div>
         </section>
@@ -83,7 +84,7 @@ const Home: React.FC = () => {
         <section className="py-20 bg-white">
           <div className="max-w-[1120px] mx-auto px-4 md:px-10">
             <div className="flex flex-col items-center text-center mb-12">
-              <img src="/react-assets/images/icons/stars-decoration.webp" alt="Stars" className="w-[70px] mb-6" />
+              <img src={IMAGES.icons.stars} alt="Stars" className="w-[70px] mb-6" />
               <h2 className="text-[30px] md:text-[50px] text-brand-strong mb-6">Dove trovarci</h2>
               <p className="text-[16px] text-brand-strong max-w-3xl">
                 Siamo orgogliosi della rete di professionisti e rivenditori che hanno già scelto Léger LAB per l'innovazione e l'efficacia dei nostri trattamenti.
@@ -99,7 +100,7 @@ const Home: React.FC = () => {
         <section className="py-10 md:py-20 bg-white">
           <div className="max-w-[1120px] mx-auto px-4 md:px-10 grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <img src="/react-assets/images/features/benefits-badges.webp" alt="Benefits" className="w-[320px] mx-auto md:mx-0 mb-8" />
+              <img src={IMAGES.features.benefitsBadges} alt="Benefits" className="w-[320px] mx-auto md:mx-0 mb-8" />
               <h2 className="text-[30px] md:text-[50px] leading-tight text-brand-strong mb-4">
                 Più semplice,<br />più efficace.<br />Ricaricabile.
               </h2>
@@ -112,7 +113,7 @@ const Home: React.FC = () => {
               </button>
             </div>
             <div className="order-1 md:order-2">
-              <img src="/react-assets/images/banners/leger-experience.webp" alt="Leger Experience" className="w-full max-w-[800px]" />
+              <img src={IMAGES.banners.legerExperience} alt="Leger Experience" className="w-full max-w-[800px]" />
             </div>
           </div>
         </section>
@@ -127,15 +128,15 @@ const Home: React.FC = () => {
               </p>
               <div className="flex gap-4">
                 <a href="https://www.instagram.com/legerlab_official/" target="_blank" rel="noreferrer">
-                  <img src="/react-assets/images/logos/social/instagram-icon.webp" alt="Instagram" className="w-10" />
+                  <img src={IMAGES.logos.social.instagram} alt="Instagram" className="w-10" />
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=61550876933299" target="_blank" rel="noreferrer">
-                  <img src="/react-assets/images/logos/social/facebook-icon.webp" alt="Facebook" className="w-10" />
+                  <img src={IMAGES.logos.social.facebook} alt="Facebook" className="w-10" />
                 </a>
               </div>
             </div>
             <div className="flex justify-center">
-              <img src="/react-assets/images/logos/social/instagram-3d.webp" alt="Instagram 3D" className="w-full max-w-[500px]" />
+              <img src={IMAGES.logos.social.instagram3d} alt="Instagram 3D" className="w-full max-w-[500px]" />
             </div>
           </div>
         </section>
@@ -144,7 +145,7 @@ const Home: React.FC = () => {
         <section className="py-10 bg-brand-soft relative overflow-hidden">
           <div className="max-w-[1120px] mx-auto px-4 md:px-10 flex flex-col md:flex-row items-center">
             <div className="w-full md:w-1/2 mb-8 md:mb-0 relative z-10">
-              <img src="/react-assets/images/banners/legs-promo.webp" alt="Legs" className="w-full max-w-[600px]" />
+              <img src={IMAGES.banners.legsPromo} alt="Legs" className="w-full max-w-[600px]" />
             </div>
             <div className="w-full md:w-1/2 text-center md:text-left z-10 md:pl-10">
               <h2 className="text-[60px] md:text-[130px] leading-none font-normal text-brand-strong mb-4 font-lato">
@@ -189,11 +190,11 @@ const Home: React.FC = () => {
         <section className="py-12 bg-white">
           <div className="max-w-[1120px] mx-auto px-4 md:px-10 grid grid-cols-2 gap-8 justify-items-center">
             <div className="flex flex-col items-center">
-              <img src="/react-assets/images/icons/shipping-free.webp" alt="Spedizione Gratuita" className="w-[100px] mb-4" />
+              <img src={IMAGES.icons.shippingFree} alt="Spedizione Gratuita" className="w-[100px] mb-4" />
               <p className="text-[16px] text-brand-strong">Spedizione gratuita</p>
             </div>
             <div className="flex flex-col items-center">
-              <img src="/react-assets/images/icons/shipping-fast.webp" alt="Spedizione Veloce" className="w-[100px] mb-4" />
+              <img src={IMAGES.icons.shippingFast} alt="Spedizione Veloce" className="w-[100px] mb-4" />
               <p className="text-[16px] text-brand-strong">Spedizione veloce</p>
             </div>
           </div>

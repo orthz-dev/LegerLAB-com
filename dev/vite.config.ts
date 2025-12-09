@@ -18,13 +18,17 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
-    minify: 'esbuild', // Use esbuild instead of terser
+    minify: 'esbuild',
     rollupOptions: {
+      input: {
+        // New entry point for vanilla JS components
+        main: path.resolve(__dirname, 'src/js/main.js'),
+      },
       output: {
-        manualChunks: () => 'index', // Force all code into a single bundle
-        entryFileNames: 'assets/[name]-[hash].js',
-        chunkFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash].[ext]',
+        // Fixed names (no hashing) for easier Shopify integration
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name]-chunk.js',
+        assetFileNames: 'assets/[name].[ext]',
       }
     },
     chunkSizeWarningLimit: 1000

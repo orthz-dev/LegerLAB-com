@@ -1,0 +1,147 @@
+{% comment %} Testimonials Section - Recensioni e testimonianze clienti {% endcomment %}
+
+<section class="py-16 bg-white">
+  <div class="max-w-[1120px] mx-auto px-4 md:px-10">
+    <!-- Section Header -->
+    <div class="text-center mb-12">
+      <h2 class="text-[32px] md:text-[40px] text-brand-strong mb-4 font-lato">
+        {{ section.settings.title | default: "Cosa dicono i nostri clienti" }}
+      </h2>
+      {%if section.settings.subtitle != blank %}
+        <p class="text-[16px] md:text-[18px] text-brand-text max-w-2xl mx-auto">
+          {{ section.settings.subtitle }}
+        </p>
+      {% endif %}
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="grid md:grid-cols-3 gap-8">
+      {% for block in section.blocks %}
+        <div class="bg-brand-soft/30 p-6 rounded-2xl border border-brand-soft">
+          <!-- Rating Stars -->
+          <div class="flex gap-1 mb-4">
+            {% for i in (1..5) %}
+              <span class="text-brand-strong text-lg">★</span>
+            {% endfor %}
+          </div>
+
+          <!-- Testimonial Text -->
+          <p class="text-[14px] md:text-[16px] text-brand-text mb-4 leading-relaxed">
+            "{{ block.settings.testimonial_text }}"
+          </p>
+
+          <!-- Author Info -->
+          <div class="flex items-center gap-3">
+            {% if block.settings.author_image != blank %}
+              <img
+                src="{{ block.settings.author_image | img_url: '60x60', crop: 'center' }}"
+                alt="{{ block.settings.author_name }}"
+                class="w-10 h-10 rounded-full object-cover"
+              />
+            {% else %}
+              <div class="w-10 h-10 rounded-full bg-brand-fresh flex items-center justify-center">
+                <span class="text-brand-strong font-bold text-sm">
+                  {{ block.settings.author_name | slice: 0 }}
+                </span>
+              </div>
+            {% endif %}
+            <div>
+              <p class="text-brand-strong font-normal text-[14px]">{{ block.settings.author_name }}</p>
+              {% if block.settings.author_location != blank %}
+                <p class="text-brand-text text-[12px]">{{ block.settings.author_location }}</p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Empty State -->
+    {% if section.blocks.size == 0 %}
+      <div class="text-center py-12">
+        <p class="text-brand-text">Aggiungi testimonianze dalla sezione Theme Editor</p>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titolo sezione",
+      "default": "Cosa dicono i nostri clienti"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Sottotitolo (opzionale)"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "testimonial_text",
+          "label": "Testo recensione",
+          "default": "Prodotto fantastico! Ho notato risultati già dopo poche settimane di utilizzo."
+        },
+        {
+          "type": "text",
+          "id": "author_name",
+          "label": "Nome cliente",
+          "default": "Maria R."
+        },
+        {
+          "type": "text",
+          "id": "author_location",
+          "label": "Località (opzionale)",
+          "placeholder": "Milano, Italia"
+        },
+        {
+          "type": "image_picker",
+          "id": "author_image",
+          "label": "Foto cliente (opzionale)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials",
+      "blocks": [
+        {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_text": "Incredibile! Le mie gambe sono visibilmente più toniche e leggere.",
+            "author_name": "Giulia M.",
+            "author_location": "Roma"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_text": "Finalmente un prodotto che funziona davvero. Lo consiglio a tutte!",
+            "author_name": "Sara P.",
+            "author_location": "Milano"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_text": "Comodo, efficace e ricaricabile. Non potevo chiedere di meglio!",
+            "author_name": "Elena T.",
+            "author_location": "Torino"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

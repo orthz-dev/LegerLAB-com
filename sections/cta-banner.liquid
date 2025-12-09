@@ -1,0 +1,96 @@
+{% comment %} CTA Banner Section - LEGS ON TOP promo banner {% endcomment %}
+
+<section class="py-10 bg-brand-soft relative overflow-hidden">
+  <div class="max-w-[1120px] mx-auto px-4 md:px-10 flex flex-col md:flex-row items-center">
+    <!-- Image Column -->
+    <div class="w-full md:w-1/2 mb-8 md:mb-0 relative z-10">
+      <img
+        src="{{ section.settings.banner_image | default: 'banners-legs-promo.jpg' | asset_url }}"
+        alt="{{ section.settings.alt_text | default: 'Legs Promo' }}"
+        class="w-full max-w-[600px]"
+      />
+    </div>
+
+    <!-- Content Column -->
+    <div class="w-full md:w-1/2 text-center md:text-left z-10 md:pl-10">
+      <h2 class="text-[60px] md:text-[130px] leading-none font-normal text-brand-strong mb-4 font-lato">
+        {{ section.settings.main_title | default: "LEGS<br />ON<br />TOP" }}
+      </h2>
+      <h3 class="text-[24px] md:text-[32px] text-brand-strong mb-4">
+        {{ section.settings.subtitle | default: "10% DI SCONTO" }}
+      </h3>
+      <p class="text-[16px] text-brand-strong mb-6">
+        {{ section.settings.description | default: "iscrivendoti alla newsletter. Valida su Amazon.it" }}
+      </p>
+
+      {% if section.settings.show_cta %}
+        <a
+          href="{{ section.settings.cta_url | default: '#newsletter' }}"
+          class="inline-block bg-brand-strong text-white px-10 py-3 rounded-full font-normal text-[16px] hover:bg-brand-strong/90 transition-colors"
+        >
+          {{ section.settings.cta_text | default: "ISCRIVITI ALLA NEWSLETTER" }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "CTA Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Immagine banner"
+    },
+    {
+      "type": "text",
+      "id": "alt_text",
+      "label": "Alt text immagine",
+      "default": "Legs Promo"
+    },
+    {
+      "type": "html",
+      "id": "main_title",
+      "label": "Titolo principale",
+      "default": "LEGS<br />ON<br />TOP"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sottotitolo",
+      "default": "10% DI SCONTO"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Descrizione",
+      "default": "iscrivendoti alla newsletter. Valida su Amazon.it"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_cta",
+      "label": "Mostra bottone CTA",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Testo CTA",
+      "default": "ISCRIVITI ALLA NEWSLETTER"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Link CTA",
+      "default": "#newsletter"
+    }
+  ],
+  "presets": [
+    {
+      "name": "CTA Banner"
+    }
+  ]
+}
+{% endschema %}

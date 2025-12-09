@@ -1,0 +1,66 @@
+{% comment %} Product Features Section - Caratteristiche principali prodotto {% endcomment %}
+
+<section class="py-10 md:py-20 bg-white">
+  <div class="max-w-[1120px] mx-auto px-4 md:px-10 grid md:grid-cols-2 gap-12 items-center">
+    <!-- Content Column -->
+    <div class="order-2 md:order-1">
+      <img
+        src="{{ 'features-benefits-badges.jpg' | asset_url }}"
+        alt="Benefits Badges"
+        class="w-[320px] mx-auto md:mx-0 mb-8"
+      />
+      <h2 class="text-[30px] md:text-[50px] leading-tight text-brand-strong mb-4 font-lato">
+        Più semplice,<br />più efficace.<br />Ricaricabile.
+      </h2>
+      <p class="text-[16px] md:text-[20px] text-brand-strong mb-8">
+        {{ section.settings.price_text | default: "Da € 24,99" }}
+      </p>
+      <a
+        href="{{ section.settings.cta_url | default: '/pages/collant' }}"
+        class="inline-block bg-brand-soft text-brand-strong px-10 py-3 rounded-full font-normal text-[16px] hover:bg-brand-fresh transition-colors"
+      >
+        {{ section.settings.cta_text | default: "SCOPRI IL COLLANT" }}
+      </a>
+    </div>
+
+    <!-- Image Column -->
+    <div class="order-1 md:order-2">
+      <img
+        src="{{ 'banners-leger-experience.jpg' | asset_url }}"
+        alt="Léger Experience"
+        class="w-full max-w-[800px]"
+      />
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product Features",
+  "settings": [
+    {
+      "type": "text",
+      "id": "price_text",
+      "label": "Testo prezzo",
+      "default": "Da € 24,99"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Testo CTA",
+      "default": "SCOPRI IL COLLANT"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Link CTA",
+      "default": "/pages/collant"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Features"
+    }
+  ]
+}
+{% endschema %}

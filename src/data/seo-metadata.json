@@ -1,0 +1,144 @@
+{
+    "pages": {
+        "/": {
+            "title": "Collant Drenante Anticellulite | Leger Lab - Trattamenti Professionali",
+            "description": "Scopri il Collant Drenante Anticellulite Leger Lab: trattamento professionale a casa tua. Tecnologia brevettata per gambe leggere e pelle liscia. Spedizione gratuita ✓",
+            "keywords": [
+                "collant drenante",
+                "anticellulite",
+                "trattamento corpo",
+                "drenaggio linfatico",
+                "gambe leggere"
+            ],
+            "og_image": "/assets/images/banners/home-hero.webp",
+            "canonical": "/"
+        },
+        "/collant": {
+            "title": "Il Collant Drenante Anticellulite | Tecnologia Brevettata Leger Lab",
+            "description": "Collant drenante con tecnologia brevettata per trattamenti anticellulite professionali. Risultati visibili, comfort garantito. Scopri come funziona.",
+            "keywords": [
+                "collant drenante",
+                "tecnologia brevettata",
+                "anticellulite professionale"
+            ],
+            "og_image": "/assets/images/products/collant-hero.webp",
+            "canonical": "/collant"
+        },
+        "/come-si-usa": {
+            "title": "Come Si Usa il Collant Drenante | Guida Completa Leger Lab",
+            "description": "Guida passo-passo per utilizzare il collant drenante Leger Lab. Istruzioni dettagliate, consigli utili e video tutorial per risultati ottimali.",
+            "keywords": [
+                "come usare collant drenante",
+                "istruzioni",
+                "guida trattamento"
+            ],
+            "og_image": "/assets/images/banners/how-to-use.webp",
+            "canonical": "/come-si-usa"
+        },
+        "/lavora-con-noi": {
+            "title": "Diventa Rivenditore Leger Lab | Opportunità Business",
+            "description": "Unisciti alla rete di rivenditori Leger Lab. Prodotti innovativi, supporto dedicato, margini competitivi. Richiedi informazioni per partnership.",
+            "keywords": [
+                "rivenditore",
+                "partnership",
+                "business opportunity",
+                "distributore"
+            ],
+            "og_image": "/assets/images/banners/retailers.webp",
+            "canonical": "/lavora-con-noi"
+        },
+        "/faq": {
+            "title": "Domande Frequenti (FAQ) | Leger Lab Collant Drenante",
+            "description": "Tutte le risposte alle tue domande sul collant drenante Leger Lab: utilizzo, risultati, spedizioni, resi e molto altro.",
+            "keywords": [
+                "faq",
+                "domande frequenti",
+                "supporto clienti",
+                "informazioni"
+            ],
+            "og_image": "/assets/images/logos/og-image.jpg",
+            "canonical": "/faq"
+        },
+        "/ordine": {
+            "title": "Acquista Collant Drenante | Ordina Online Leger Lab",
+            "description": "Ordina il tuo kit collant drenante Leger Lab. Pagamento sicuro, spedizione gratuita, soddisfatti o rimborsati. Scegli il tuo trattamento.",
+            "keywords": [
+                "acquista collant",
+                "ordine online",
+                "shop",
+                "e-commerce"
+            ],
+            "og_image": "/assets/images/products/kit-collant-6-hero.webp",
+            "canonical": "/ordine"
+        },
+        "/about-us": {
+            "title": "Chi Siamo | Leger Lab - La Nostra Storia",
+            "description": "Scopri la storia di Leger Lab: innovazione, ricerca e passione per il benessere. La nostra missione è portare trattamenti professionali a casa tua.",
+            "keywords": [
+                "chi siamo",
+                "storia",
+                "azienda",
+                "mission"
+            ],
+            "og_image": "/assets/images/banners/about-us.webp",
+            "canonical": "/about-us"
+        },
+        "/lo-sapevi-che": {
+            "title": "Lo Sapevi Che? | Blog Benessere Leger Lab",
+            "description": "Curiosità, consigli e informazioni sul benessere delle gambe, cellulite e trattamenti corpo. Il blog di Leger Lab per il tuo benessere.",
+            "keywords": [
+                "blog benessere",
+                "consigli cellulite",
+                "salute gambe"
+            ],
+            "og_image": "/assets/images/banners/blog.webp",
+            "canonical": "/lo-sapevi-che"
+        },
+        "/magazine": {
+            "title": "Magazine Leger Lab | Articoli e Approfondimenti Benessere",
+            "description": "Articoli, guide e approfondimenti su trattamenti corpo, bellezza e benessere. Il magazine di Leger Lab per rimanere sempre informati.",
+            "keywords": [
+                "magazine",
+                "articoli benessere",
+                "guide trattamenti"
+            ],
+            "og_image": "/assets/images/banners/magazine.webp",
+            "canonical": "/magazine"
+        }
+    },
+    "products": {
+        "kit-collant-6": {
+            "title": "Kit Collant Drenante 6 Trattamenti | Leger Lab - Offerta Completa",
+            "description": "Kit completo con collant ricaricabile + 6 ricariche di Gel Attivo. Trattamento intensivo anticellulite per risultati duraturi. Miglior rapporto qualità-prezzo.",
+            "keywords": [
+                "kit 6 trattamenti",
+                "offerta completa",
+                "trattamento intensivo"
+            ],
+            "og_image": "/assets/images/products/kit-collant-6-hero.webp",
+            "canonical": "/prodotti/kit-collant-6-trattamenti"
+        },
+        "kit-collant-1": {
+            "title": "Kit Collant Drenante 1 Trattamento | Prova Leger Lab",
+            "description": "Kit starter ideale per provare il collant drenante Leger Lab. 1 trattamento completo, ricaricabile. Perfetto per iniziare il tuo percorso benessere.",
+            "keywords": [
+                "kit prova",
+                "1 trattamento",
+                "starter kit"
+            ],
+            "og_image": "/assets/images/products/kit-collant-1-hero.webp",
+            "canonical": "/prodotti/kit-collant-1-trattamento"
+        },
+        "ricarica-gel": {
+            "title": "Ricarica Gel Attivo 500ml | Leger Lab - Gel Drenante",
+            "description": "Ricarica 500ml di Gel Attivo per collant drenante Leger Lab. Formula professionale con principi attivi naturali. Compatibile con tutti i kit.",
+            "keywords": [
+                "ricarica gel",
+                "gel attivo",
+                "refill 500ml"
+            ],
+            "og_image": "/assets/images/products/ricarica-gel-hero.webp",
+            "canonical": "/prodotti/ricarica-gel-500ml"
+        }
+    }
+}

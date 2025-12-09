@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "title": "Kit Collant Drenante + Sali",
+    "description": "Il trattamento spa a casa tua. Drena i liquidi in eccesso e migliora la microcircolazione con un solo utilizzo.",
+    "price": 59.90,
+    "link": "/shop-kit-drenante",
+    "image_link": "https://picsum.photos/600/800",
+    "availability": "in stock",
+    "sku": "LEGER-KIT-01"
+  }
+]

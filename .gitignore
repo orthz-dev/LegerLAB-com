@@ -21,3 +21,11 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Dev Environment
+dev/node_modules
+dev/dist
+dev/.vite
+dev/.env
+dev/.env.local
+node_modules

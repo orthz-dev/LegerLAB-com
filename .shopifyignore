@@ -1,4 +1,5 @@
 # Exclude development and source files from Shopify Theme
+dev/
 src/
 public/
 scripts/
